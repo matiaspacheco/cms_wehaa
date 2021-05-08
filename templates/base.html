@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %} {% endblock %} - </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="all,follow">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <link rel="shortcut icon" href="{% static 'favicon.png' %}">
+
+        <!-- Style -->
+        {% block styless %} {% endblock styless %}
+
+   </head>
+
+    <body>
+          
+        {% block body %}  {% endblock body %}
+
+        <!-- Scripts -->
+        {% block script %} {% endblock script %}      
+    </body>
+</html>
